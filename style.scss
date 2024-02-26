@@ -1,0 +1,97 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.hei-100{
+    height: 130px!important;
+}
+
+main{
+    .navbar{
+        z-index: 9999;
+        backdrop-filter: blur(50px);
+        .container{
+
+            .nav-menu{
+                .menu-list{
+                    .nav-item{
+                        .nav-link{
+                            color:white;
+                            transition: all .1s linear;
+                            &:hover{
+                                color:rgba(255,255,255,.5);
+                            }
+                        }
+                    }
+                }
+            }
+            .hamburger-menu{
+                position: absolute;
+                width: 100%;
+                height: 0;
+                right: 0;
+                top:100%;
+                border-radius: 0 0 5px 5px;
+                backdrop-filter: blur(50px);
+                overflow: hidden;
+                transition: all .1s linear;
+
+                .hamburger-item{
+                    display: block;
+                    color:white;
+                    transition: all .1s linear;
+
+                    &:hover{
+                        color:rgba(255,255,255,.5);
+
+                    }
+                }
+            }
+        }
+    }
+
+    .top-head{
+        background-image: url(img/Tower_bridge_London_Twilight_-_November_2006.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        min-width: 400px;
+        padding:16rem 0 16rem 0;
+        position: relative;
+        z-index: 0;
+
+        &::before{
+            content: '';
+            background-color: rgba(0,0,0,.5);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+            top:0;
+        }
+    }
+
+    .footer{
+        .container{
+            .foot-content{
+                span{
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
+
+    .counter{
+        bottom:3%;
+        right:1%;
+        transform: translate(-0,-0);
+        width: 250px;
+        height: 250px;
+        background-color: rgba(0,0,0,.5);
+        backdrop-filter: blur(10px);
+    }
+}
